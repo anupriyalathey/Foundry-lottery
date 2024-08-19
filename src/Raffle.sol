@@ -72,7 +72,14 @@ contract Raffle is VRFConsumerBaseV2{
     event EnteredRaffle(address indexed player);
     event PickedWinner(address indexed winner);
 
-    constructor(uint256 entranceFee, uint256 interval, address vrfCoordinator, bytes32 gasLane, uint64 subscriptionId, uint32 callbackGasLimit) VRFConsumerBaseV2(vrfCoordinator) {
+    constructor(
+        uint256 entranceFee,
+        uint256 interval, 
+        address vrfCoordinator, 
+        bytes32 gasLane, 
+        uint64 subscriptionId, 
+        uint32 callbackGasLimit
+        ) VRFConsumerBaseV2(vrfCoordinator) {
         i_entranceFee = entranceFee;
         i_interval = interval;
         i_vrfCoordinator = VRFCoordinatorV2Interface(vrfCoordinator);
