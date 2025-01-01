@@ -2,7 +2,7 @@
 
 ## About
 
-This code is to create proveably random smart contract lottery.
+This code is to create proveably random smart contract lottery using Foundry.
 
 ## What we want it to do
 
